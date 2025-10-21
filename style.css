@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px auto auto 700px auto auto 500px;
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  padding: 0 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav #d1 {
+  display: flex;
+  gap: 5px;
+}
+nav #d1 img {
+  height: 24px;
+}
+nav #d2 {
+  display: flex;
+  gap: 40px;
+}
+nav #d2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+nav #d2 a:hover {
+  color: rgb(88, 88, 88);
+}
+nav #d3 {
+  display: flex;
+  gap: 16px;
+}
+nav #d3 button {
+  padding: 12px 16px;
+  border-radius: 24px;
+  border: 2px solid rgb(0, 123, 255);
+  font-weight: 500;
+}
+nav #d3 #b1 {
+  color: rgb(0, 123, 255);
+  background-color: white;
+}
+nav #d3 #b1:hover {
+  color: white;
+  background-color: rgb(0, 123, 255);
+  cursor: pointer;
+}
+nav #d3 #b2 {
+  color: white;
+  background-color: rgb(0, 123, 255);
+}
+nav #d3 #b2:hover {
+  background-color: rgb(0, 143, 255);
+  cursor: pointer;
+}
+
+#sec1 {
+  background-color: rgb(248, 248, 248);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 4fr;
+  gap: 40px;
+  padding: 80px;
+}
+#sec1 div {
+  display: flex;
+  gap: 20px;
+}
+#sec1 div h1 {
+  font-size: 48px;
+  font-weight: 300;
+  background-color: rgb(248, 248, 248);
+  width: 50%;
+}
+#sec1 div #innerD1 {
+  display: flex;
+  flex-direction: column;
+  color: rgb(136, 136, 136);
+}
+#sec1 div #innerD1 div {
+  display: flex;
+}
+#sec1 div #innerD1 div button {
+  padding: 12px 16px;
+  border-radius: 24px;
+  border: 2px solid rgb(0, 123, 255);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#sec1 div #innerD1 div button i {
+  font-size: 24px;
+}
+#sec1 div #innerD1 div #b1 {
+  color: rgb(0, 123, 255);
+  background-color: white;
+}
+#sec1 div #innerD1 div #b1:hover {
+  color: white;
+  background-color: rgb(0, 123, 255);
+  cursor: pointer;
+}
+#sec1 div #innerD1 div #b2 {
+  color: white;
+  background-color: rgb(0, 123, 255);
+}
+#sec1 div #innerD1 div #b2:hover {
+  background-color: rgb(0, 143, 255);
+  cursor: pointer;
+}
+#sec1 #imgDiv {
+  background: url(https://cdn.prod.website-files.com/688099378cdd2af798fddd5a/6881fafa3d02208e63862113_About%20hero-p-2000.webp);
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px;
+  height: 100%;
+  width: 100%;
+}
+
+#sec2 {
+  background-color: white;
+  align-items: center;
+  display: flex;
+  padding: 60px;
+  justify-content: space-between;
+}
+#sec2 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#sec2 div h1 {
+  font-size: 48px;
+  font-weight: 400;
+}
+#sec2 div p {
+  font-size: 16px;
+  color: rgb(136, 136, 136);
+  width: 70%;
+  text-align: center;
+}
+
+#sec3 {
+  background-color: rgb(248, 248, 248);
+  display: flex;
+  padding: 80px;
+  gap: 80px;
+}
+#sec3 div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 70%;
+}
+#sec3 div button {
+  width: 15%;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 24px;
+  border: 2px solid rgb(88, 88, 88);
+  color: rgb(88, 88, 88);
+  font-size: 10px;
+  font-weight: 800;
+}
+#sec3 div button:hover {
+  color: white;
+  background-color: rgb(88, 88, 88);
+  cursor: pointer;
+}
+#sec3 div div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#sec3 div div h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+#sec3 div div p {
+  color: rgb(88, 88, 88);
+  font-size: 16px;
+}
+#sec3 #sideimg-div {
+  height: 500px;
+  width: 700px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background: url(https://plus.unsplash.com/premium_photo-1722859456176-4ae0457e58e2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA1fHxidXNpbmVzc3xlbnwwfDJ8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: plum;
+}/*# sourceMappingURL=style.css.map */
