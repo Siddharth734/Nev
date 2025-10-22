@@ -11,6 +11,21 @@ body {
   width: 100%;
 }
 
+::-webkit-scrollbar {
+  background: transparent;
+  height: 5px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 123, 255);
+  border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(88, 88, 88);
+}
+
 main {
   height: 100%;
   width: 100%;
@@ -41,6 +56,7 @@ nav #d2 a {
   text-decoration: none;
   color: black;
   font-size: 14px;
+  transition: all 0.2s ease-in-out;
 }
 nav #d2 a:hover {
   color: rgb(88, 88, 88);
@@ -52,12 +68,13 @@ nav #d3 {
 nav #d3 button {
   padding: 12px 16px;
   border-radius: 24px;
-  border: 2px solid rgb(0, 123, 255);
   font-weight: 500;
+  transition: all 0.25s ease-in-out;
 }
 nav #d3 #b1 {
   color: rgb(0, 123, 255);
   background-color: white;
+  border: 2px solid rgb(0, 123, 255);
 }
 nav #d3 #b1:hover {
   color: white;
@@ -67,6 +84,7 @@ nav #d3 #b1:hover {
 nav #d3 #b2 {
   color: white;
   background-color: rgb(0, 123, 255);
+  border: none;
 }
 nav #d3 #b2:hover {
   background-color: rgb(0, 143, 255);
@@ -100,13 +118,13 @@ nav #d3 #b2:hover {
   display: flex;
 }
 #sec1 div #innerD1 div button {
-  padding: 12px 16px;
+  padding: 10px 16px;
   border-radius: 24px;
-  border: 2px solid rgb(0, 123, 255);
   font-weight: 500;
   display: flex;
   align-items: center;
   gap: 5px;
+  transition: all 0.25s ease-in;
 }
 #sec1 div #innerD1 div button i {
   font-size: 24px;
@@ -114,6 +132,7 @@ nav #d3 #b2:hover {
 #sec1 div #innerD1 div #b1 {
   color: rgb(0, 123, 255);
   background-color: white;
+  border: 2px solid rgb(0, 123, 255);
 }
 #sec1 div #innerD1 div #b1:hover {
   color: white;
@@ -123,6 +142,7 @@ nav #d3 #b2:hover {
 #sec1 div #innerD1 div #b2 {
   color: white;
   background-color: rgb(0, 123, 255);
+  border: none;
 }
 #sec1 div #innerD1 div #b2:hover {
   background-color: rgb(0, 143, 255);
@@ -172,17 +192,20 @@ nav #d3 #b2:hover {
   flex-direction: column;
   width: 70%;
 }
-#sec3 div button {
-  width: 15%;
-  padding: 10px;
+#sec3 div #btndiv1 {
+  display: inline-block;
+}
+#sec3 div #btndiv1 button {
+  padding: 10px 16px;
   background-color: transparent;
   border-radius: 24px;
   border: 2px solid rgb(88, 88, 88);
   color: rgb(88, 88, 88);
   font-size: 10px;
   font-weight: 800;
+  transition: all 0.2s ease-in-out;
 }
-#sec3 div button:hover {
+#sec3 div #btndiv1 button:hover {
   color: white;
   background-color: rgb(88, 88, 88);
   cursor: pointer;
@@ -209,6 +232,174 @@ nav #d3 #b2:hover {
   background-position: center;
   background-size: cover;
   border-radius: 10px;
+}
+
+#sec4 {
+  background-color: white;
+  padding: 80px;
+  width: 100%;
+  display: flex;
+  gap: 100px;
+  flex-direction: column;
+}
+#sec4 #div1 {
+  width: 100%;
+  display: flex;
+  gap: 100px;
+}
+#sec4 #div1 #innerDiv1 {
+  display: inline-block;
+}
+#sec4 #div1 #innerDiv1 button {
+  padding: 10px 16px;
+  background-color: transparent;
+  border-radius: 24px;
+  border: 2px solid rgb(88, 88, 88);
+  color: rgb(88, 88, 88);
+  font-size: 10px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+}
+#sec4 #div1 #innerDiv1 button:hover {
+  color: white;
+  background-color: rgb(88, 88, 88);
+  cursor: pointer;
+}
+#sec4 #div1 #innerDiv1 h1 {
+  font-size: 40px;
+  font-weight: 300;
+}
+#sec4 #div1 #innerDiv2 {
+  display: flex;
+  align-items: end;
+  color: rgb(136, 136, 136);
+}
+#sec4 #div2 {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+  justify-items: center;
+}
+#sec4 #div2 .card {
+  position: relative;
+  height: 350px;
+  width: 250px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+#sec4 #div2 .card .imgholder {
+  position: relative;
+  transition: opacity 0.2s ease-in-out;
+}
+#sec4 #div2 .card .imgholder img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+#sec4 #div2 .card .imgholder div {
+  position: absolute;
+  bottom: 5%;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  opacity: 1;
+}
+#sec4 #div2 .card .imgholder div h2 {
+  font-weight: 300;
+}
+#sec4 #div2 .card .imgholder div h4 {
+  font-weight: 100;
+  opacity: 0.7;
+}
+#sec4 #div2 .card .overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 123, 255);
+  padding: 24px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+#sec4 #div2 .card .overlay div {
+  color: white;
+  margin-bottom: 24%;
+}
+#sec4 #div2 .card .overlay div h2 {
+  font-weight: 300;
+}
+#sec4 #div2 .card .overlay div h4 {
+  font-weight: 300;
+  opacity: 0.8;
+}
+#sec4 #div2 .card .overlay p {
+  color: white;
+  opacity: 0.8;
+  font-size: 14px;
+  margin-bottom: 56%;
+}
+#sec4 #div2 .card .overlay section i {
+  color: white;
+  border: 1px solid rgb(0, 143, 255);
+  padding: 8px;
+  border-radius: 100%;
+}
+#sec4 #div2 .card .overlay section i:hover {
+  background-color: rgb(0, 143, 255);
+}
+#sec4 #div2 .card:hover .imgholder div {
+  opacity: 0;
+}
+#sec4 #div2 .card:hover .overlay {
+  opacity: 0.9;
+}
+
+#sec5 {
+  background-color: rgb(248, 248, 248);
+  padding: 80px;
+  width: 100%;
+  display: flex;
+  gap: 100px;
+  flex-direction: column;
+}
+#sec5 #div1 {
+  width: 100%;
+  display: flex;
+  gap: 100px;
+}
+#sec5 #div1 #innerDiv1 {
+  display: inline-block;
+}
+#sec5 #div1 #innerDiv1 button {
+  padding: 10px 16px;
+  background-color: transparent;
+  border-radius: 24px;
+  border: 2px solid rgb(88, 88, 88);
+  color: rgb(88, 88, 88);
+  font-size: 10px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+}
+#sec5 #div1 #innerDiv1 button:hover {
+  color: white;
+  background-color: rgb(88, 88, 88);
+  cursor: pointer;
+}
+#sec5 #div1 #innerDiv1 h1 {
+  font-size: 40px;
+  font-weight: 300;
+}
+#sec5 #div1 #innerDiv2 {
+  display: flex;
+  align-items: end;
+  color: rgb(136, 136, 136);
 }
 
 footer {
